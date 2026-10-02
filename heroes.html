@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Heroes — Arena of Valor | Fan Rebuild</title>
+<meta name="description" content="Browse all 68 Arena of Valor heroes by class: Tank, Warrior, Assassin, Mage, Marksman and Support.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23161616'/%3E%3Ctext x='16' y='23' font-size='20' font-weight='800' font-family='Arial' fill='%23f59e0b' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html" aria-label="Arena of Valor home">
+      <span class="brand-mark">V</span>
+      <span>ARENA <b>OF</b> VALOR</span>
+    </a>
+    <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li class="has-drop">
+        <a class="nav-link" href="game.html">GAME <span class="caret">▼</span></a>
+        <div class="dropdown">
+          <a href="game.html"><span>What is Arena of Valor</span></a>
+          <a href="game.html#modes"><span>Game Modes</span></a>
+          <a href="game.html#roles"><span>Hero Classes</span></a>
+          <a href="game.html#start"><span>Get Started</span></a>
+        </div>
+      </li>
+      <li><a class="nav-link" href="heroes.html" aria-current="page">HEROES</a></li>
+      <li><a class="nav-link" href="news.html">NEWS</a></li>
+      <li><a class="nav-link" href="esports.html">ESPORTS</a></li>
+      <li class="has-drop">
+        <a class="nav-link" href="index.html#community">COMMUNITY <span class="caret">▼</span></a>
+        <div class="dropdown">
+          <a href="https://www.facebook.com/ArenaofValor/" target="_blank" rel="noopener"><span>Facebook</span></a>
+          <a href="https://www.twitter.com/ArenaofValor" target="_blank" rel="noopener"><span>Twitter / X</span></a>
+          <a href="https://www.instagram.com/arenaofvalor/" target="_blank" rel="noopener"><span>Instagram</span></a>
+          <a href="https://discord.gg/hwtF5zs" target="_blank" rel="noopener"><span>Discord</span></a>
+          <a href="https://www.reddit.com/r/arenaofvalor/" target="_blank" rel="noopener"><span>Reddit</span></a>
+        </div>
+      </li>
+      <li><a class="nav-link" href="https://global.yzfchat.com/newgames/scene_product.html?scene_id=1742375852240970&amp;gameid=1135&amp;platid=2&amp;topc=1&amp;lang_type=en" target="_blank" rel="noopener">SUPPORT</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Hero roster</span>
+      <h1 class="h1">MEET THE HEROES</h1>
+      <p>Master unique and powerful heroes. Every hero belongs to one of six classes — pick your playstyle, from shield-bearing Tanks to stealthy Assassins.</p>
+      <div class="tabs" id="role-tabs" role="group" aria-label="Filter heroes by class"></div>
+      <div class="heroes-count" id="heroes-count">68 / 68 HEROES</div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:36px">
+    <div class="wrap">
+      <div class="hero-grid-cards" id="hero-grid"></div>
+    </div>
+  </section>
+</main>
+
+<!-- hero detail modal -->
+<div class="modal-root" id="detail-modal" role="dialog" aria-modal="true" aria-label="Hero detail">
+  <div class="modal-mask"></div>
+  <div class="modal-panel">
+    <button class="modal-close" type="button" aria-label="Close">✕</button>
+    <div class="hero-detail">
+      <div class="art"><img id="detail-art" src="" alt=""></div>
+      <div>
+        <div class="role-line" id="detail-role"></div>
+        <div class="name" id="detail-name"></div>
+        <p>Official hero card art from Arena of Valor. Master a hero's unique abilities, pair them with the right arcana and teammates, and carry your team to victory in the arena.</p>
+        <div class="ids">SOURCE: ARENAOFVALOR.COM /IMAGES/HEROES</div>
+        <div style="margin-top:22px;display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn btn-gold" href="game.html#roles">LEARN CLASSES</a>
+          <a class="btn btn-ghost" href="https://arenaofvalor.fandom.com/wiki/Special:Search?query=" target="_blank" rel="noopener">WIKI</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-note">
+      <span>©2021 PROXIMA BETA PTE LIMITED. ALL RIGHTS RESERVED.</span>
+      <span>Unofficial fan-made rebuild for design study · not affiliated with TiMi / Level Infinite · <span id="year"></span></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/heroes-data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
